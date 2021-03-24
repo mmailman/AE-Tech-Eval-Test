@@ -6,6 +6,15 @@ You will need Node.js installed.
 1. Install Nightwatch - npm install Nightwatch
 2. Install ChromeDriver - npm install chromedriver --save-dev
 
+*Running Instructions*
+To run all the tests in a file all you need to do is type into the console
+npx nightwatch tests/[Insert Test file Name here (without brackets)].js
+
+To run one test within the file you just need to add the following option to the previous command
+--testcase "[test name (without brackets)]"
+
+ex: npx nightwatch tests/menu.js --testcase "contactNav"
+
 *Tech Eval Brief*
 This technical evaluation requires creating three Automated Tests using Nightwatch(https://nightwatchjs.org). From the very beginning, use git, make regular commits to document all the project changes. Host completed work on gitlab.com in a public project. The test should be completed in three days (72 hours) upon receipt.
 
