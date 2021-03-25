@@ -20,4 +20,20 @@ describe('Location', function() {
       })
       .end();
   });
+
+  test('longbeachFooterNav', function(browser) {
+    browser
+      .url('https://www.designory.com')
+      .click('.cookie-notice__close')
+      .useXpath()
+      .click('//*[@id="body"]/footer/div[1]/div/div/div[1]/div/h3/a')
+      .assert.title('Long Beach Advertising Agency | Designory')
+      .assert.urlContains('/locations/long-beach')
+
+      //Section checking that the location in the footer is active
+      .getLocationInView('//*[@id="body"]/footer')
+      .pause(5000)
+      .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[1]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
+      .end();
+  });
 });
