@@ -15,7 +15,10 @@ describe('Location', function() {
       .assert.containsText('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', 'CHICAGO')
       //Looks like assert was returning an rgba code.  The rgba code for #808084 is rgba(128, 128, 132, 1)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', 'color', 'rgba(128, 128, 132, 1)', 'Testing if element <//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a> has an inactive font color of <#808084>')
-      .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', 'color', '#fff')
+      .moveTo('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', function(){
+        browser.pause(10000)
+        browser.assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', 'color', '#fff')
+      })
       .end();
       //.expect.element('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a').text.to.contain('CHICAGO')
 
