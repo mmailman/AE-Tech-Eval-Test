@@ -1,7 +1,7 @@
 function initalPageLoadHelper (browser) {
   browser
     .url('https://www.designory.com')
-    .click('.cookie-notice__close')
+    .click('button.cookie-notice__close')
     .getLocationInView('footer')
     .waitForElementVisible('footer')
 }
