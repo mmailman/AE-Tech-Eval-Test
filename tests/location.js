@@ -3,7 +3,7 @@ function initalPageLoadHelper (browser) {
     .url('https://www.designory.com')
     .click('.cookie-notice__close')
     .getLocationInView('footer')
-    .pause(5000)
+    .waitForElementVisible('footer')
 }
 
 describe('Location', function() {
@@ -43,7 +43,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[1]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -58,7 +57,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[2]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -73,7 +71,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[3]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -88,7 +85,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[4]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -103,7 +99,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[5]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -118,7 +113,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[6]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -133,7 +127,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[7]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -148,7 +141,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[8]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -163,7 +155,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[9]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -178,7 +169,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[10]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -193,7 +183,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[11]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -208,7 +197,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[12]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -223,7 +211,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[13]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -238,7 +225,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[14]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
@@ -253,7 +239,6 @@ describe('Location', function() {
 
       //Section checking that the location in the footer is active
       .getLocationInView('//*[@id="body"]/footer')
-      .pause(5000)
       .assert.cssProperty('//*[@id="body"]/footer/div[1]/div/div/div[15]/div/h3/a', 'color', 'rgba(255, 255, 255, 1)', 'Testing if location in footer has an active font color of <#fff>')
       .end();
   });
