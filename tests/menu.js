@@ -23,7 +23,7 @@ describe('Menu', function() {
     browser
       .url('https://www.designory.com')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(1) > a')
       .click('nav > ul > li:nth-child(1) > a')
       .assert.title('Designory Work & Case Studies')
       .assert.urlContains('/work')
@@ -35,7 +35,7 @@ describe('Menu', function() {
     browser
       .url('https://www.designory.com')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(2) > a')
       .click('nav > ul > li:nth-child(2) > a')
       .assert.title('Print & Digital Agency | Designory')
       .assert.urlContains('/about')
@@ -47,7 +47,7 @@ describe('Menu', function() {
     browser
       .url('https://www.designory.com')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(3) > a')
       .click('nav > ul > li:nth-child(3) > a')
       .assert.title('Careers | Designory')
       .assert.urlContains('/careers')
@@ -60,7 +60,7 @@ describe('Menu', function() {
     browser
       .url('https://www.designory.com')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(4) > a')
       .click('nav > ul  > li:nth-child(4) > a')
       .assert.containsText('.subnav > li:nth-child(1) > a', 'LONG BEACH')
       .assert.containsText('.subnav > li:nth-child(2) > a', 'CHICAGO')
@@ -81,7 +81,7 @@ describe('Menu', function() {
       .url('https://www.designory.com')
       .click('.cookie-notice__close')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(5) > a')
       .click('nav > ul > li:nth-child(5) > a')
       .assert.title('Contact | Designory')
       .assert.urlContains('/contact')
@@ -93,7 +93,7 @@ describe('Menu', function() {
     browser
       .url('https://www.designory.com')
       .click('#nav-toggle')
-      .pause(5000)
+      .waitForElementVisible('nav > ul > li:nth-child(6) > a')
       .click('nav > ul > li:nth-child(6) > a')
       .assert.title('Designory News & Awards | Designory')
       .assert.urlContains('/news')
