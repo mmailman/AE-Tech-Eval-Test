@@ -23,9 +23,10 @@ describe('Location', function() {
 
 //The tests work when run individually, but break when the whole file is run on Long beach
 //These tests are not ideal, a lot of copy paste code which could be refactored into something much smaller given that the points of reference used are consistent between each of the location pages.
-//I found that the Title is not consistent format between all location pages which is why everything is separate.
-//I like to have at least 2 points of reference on a page before I call success which is why I used the title, url, and the active text color as requirements.
-//Another way to aleviate some of the chances of breaking is to run them async, the reason why I didn't is that would require system resouces that I don't have available.
+//Along with that if there was an id system in place to make the website more QA friendly it would also simplify things.
+//I found that the Title is not a consistent format between all location pages which is why everything is separate.
+//I like to have at least 2 points of reference on a page before I call success which is why I used the title, url(for consistency between the Menu tests and these tests), and the active text color as requirements.
+//Another way to aleviate some of the chances of breaking is to run them async, the reason why I didn't, is that would require system resouces that I don't have available.
 //Another inconsistency I noticed while the tests were running is that the Square Logo for each location is not consistent between locations, some have additional details on where they are at, others do not.
   test('longbeachFooterNav', function(browser) {
     browser
